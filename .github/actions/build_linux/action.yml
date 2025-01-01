@@ -1,0 +1,7 @@
+name: 'Build for Linux'
+description: 'Build project for Linux'
+runs:
+  using: 'composite'
+  steps:
+    - name: Build on Linux
+      run: bash make.sh linux

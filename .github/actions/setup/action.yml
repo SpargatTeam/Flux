@@ -1,0 +1,7 @@
+name: 'Download depencies'
+description: 'Download depencies'
+runs:
+  using: 'composite'
+  steps:
+    - name: Install dependencies
+      run: bash setup.sh

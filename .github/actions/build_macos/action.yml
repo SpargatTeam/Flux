@@ -1,0 +1,7 @@
+name: 'Build for macOS'
+description: 'Build project for macOS'
+runs:
+  using: 'composite'
+  steps:
+    - name: Build on macOS
+      run: bash make.sh macos

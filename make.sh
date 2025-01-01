@@ -112,7 +112,7 @@ case "$1" in
         clean
         ;;
     *)
-        echo "Usage: $0 {linux|macos|windows|lib|clean}"
+        echo "Usage: $0 {linux|macos|windows|android|clean}"
         exit 1
         ;;
 esac

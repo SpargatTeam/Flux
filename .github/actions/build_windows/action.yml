@@ -1,0 +1,7 @@
+name: 'Build for Windows'
+description: 'Build project for Windows'
+runs:
+  using: 'composite'
+  steps:
+    - name: Build on Windows
+      run: bash make.sh windows

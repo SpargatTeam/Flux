@@ -7,7 +7,11 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - name: Setup Environment
-      run: bash setup.sh
+      run: |
+        chmod +x setup.sh
+        bash setup.sh
 
     - name: Build Project for Windows
-      run: bash make.sh windows
+      run: |
+        chmod +x make.sh
+        bash make.sh macos

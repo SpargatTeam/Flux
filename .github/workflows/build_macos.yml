@@ -1,4 +1,4 @@
-name: Build Linux
+name: Build macOS
 
 on: [push, pull_request]
 
@@ -6,12 +6,15 @@ jobs:
   setup:
     runs-on: ubuntu-latest
     steps:
+    - name: Checkout repository
+      uses: actions/checkout@v2
+
     - name: Setup Environment
       run: |
         chmod +x setup.sh
         bash setup.sh
 
-    - name: Build Project for Linux
+    - name: Build Project for macOS
       run: |
         chmod +x make.sh
         bash make.sh macos

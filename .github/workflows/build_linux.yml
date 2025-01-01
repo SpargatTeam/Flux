@@ -1,0 +1,13 @@
+name: Build Linux
+
+on: [push, pull_request]
+
+jobs:
+  setup:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Setup Environment
+      run: bash setup.sh
+
+    - name: Build Project for Linux
+      run: bash make.sh linux
